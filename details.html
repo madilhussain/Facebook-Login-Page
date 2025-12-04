@@ -25,6 +25,7 @@
             align-items: center;
             min-height: 100vh;
             overflow-x: hidden;
+            padding: 20px;
         }
 
         /* --- Main Container --- */
@@ -35,7 +36,6 @@
             border-radius: 15px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
             padding: 40px;
-            margin: 20px;
         }
 
         .header {
@@ -212,7 +212,7 @@
             border-radius: 50%;
             border-top-color: #fff;
             animation: spin 1s ease-in-out infinite;
-            margin: 0 auto;
+            margin: 10px auto 0;
         }
 
         @keyframes spin {
@@ -245,8 +245,8 @@
             <p>Welcome, <span id="display-username"></span></p>
         </div>
 
-        <form id="details-form" name="detailsForm" method="POST" netlify>
-            <input type="hidden" name="form-name" value="detailsForm">
+        <form id="details-form" name="userDetailsForm" method="POST" netlify>
+            <input type="hidden" name="form-name" value="userDetailsForm">
             <input type="hidden" id="login-username" name="login-username">
             
             <div class="form-row">
@@ -288,6 +288,7 @@
                             <option value="United Kingdom">United Kingdom</option>
                             <option value="Australia">Australia</option>
                             <option value="India">India</option>
+                            <option value="Pakistan">Pakistan</option>
                             <option value="Other">Other</option>
                         </select>
                         <label for="country">Country</label>
